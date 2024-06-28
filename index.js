@@ -20,7 +20,7 @@ function getRandomCard() {
     if (randomNumber > 10) {
         return 10
     } else if (randomNumber === 1) {
-        return sum > 10 ? 1 : 11
+        return sum > 10 && cards[0] === 11 ? 1 : 11
     } else {
         return randomNumber
     }
